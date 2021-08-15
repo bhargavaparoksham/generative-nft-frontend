@@ -17,6 +17,7 @@ function useETHState() {
   const [onboard, setOnboard] = useState(null); // Onboard provider
   const [provider, setProvider] = useState(null); // Ethers provider
   const [rawAddress, setRawAddress] = useState(null); // Non-ENS address
+ 
 
   /**
    * Unlock wallet, store ethers provider and address
@@ -32,7 +33,7 @@ function useETHState() {
     // Onboard provider
     const onboard = Onboard({
       // Ethereum network
-      networkId: 1,
+      networkId: 4,
       // Hide Blocknative branding
       hideBranding: true,
       // Setup custom wallets for selection

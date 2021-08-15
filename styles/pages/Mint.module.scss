@@ -21,4 +21,24 @@
       margin-top: 5px;
     }
 
+  button {
+        background-color: var(--color-blue);
+        border: none;
+        color: white;
+        height: 30px;
+        width: 120px;
+        padding: 0px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        transition: 120ms ease;
+        border-radius: 8px;
+        margin: 30px 0px 30px 0px;
+
+        &:hover {
+          background-color: var(--color-black);
+        }
+      } 
+
 }
