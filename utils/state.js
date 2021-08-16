@@ -17,7 +17,7 @@ function useETHState() {
   const [onboard, setOnboard] = useState(null); // Onboard provider
   const [provider, setProvider] = useState(null); // Ethers provider
   const [rawAddress, setRawAddress] = useState(null); // Non-ENS address
- 
+  const [network, setNetowrk] = useState(null); // User Network
 
   /**
    * Unlock wallet, store ethers provider and address
@@ -45,6 +45,8 @@ function useETHState() {
       // Track subscriptions
       subscriptions: {
         // On wallet update
+        address: setAddress,
+        network: setNetowrk,
         wallet: async (wallet) => {
           // If wallet provider exists
           if (wallet.provider) {
@@ -79,10 +81,12 @@ function useETHState() {
   }, []);
 
   return {
+    onboard,
     provider,
     address,
     rawAddress,
     unlock,
+    network,
   };
 }
 

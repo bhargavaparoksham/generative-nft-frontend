@@ -12,18 +12,22 @@ import { useState, useEffect } from "react"; // Local state management
 
 export default function Mint() {
 
-  const { unlock, provider, address } = state.useContainer();
+  const {onboard, unlock, provider, address, network} = state.useContainer();
   const [sliderVal, setSliderVal] = useState(1); // All Slider value
   const [ethBalance, setEthBalance] = useState(null); //Eth Balance
 
-  //console.log(provider.getBalance(address));
 
   useEffect(async () => {
-    if(address == null) {
+   if (onboard != null && address == null) {
       await unlock();
-    }  
-    await updateConnection();
-  }, []);
+   } 
+  }, [onboard]);
+
+  useEffect(async () => {
+    updateConnection();
+  }, [address]);
+
+
 
   async function updateConnection() {
     try {
