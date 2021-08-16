@@ -18,6 +18,7 @@ function useETHState() {
   const [provider, setProvider] = useState(null); // Ethers provider
   const [rawAddress, setRawAddress] = useState(null); // Non-ENS address
   const [network, setNetowrk] = useState(null); // User Network
+  const [signer, setSigner] = useState(null); // Ethers signer
 
   /**
    * Unlock wallet, store ethers provider and address
@@ -64,11 +65,13 @@ function useETHState() {
             setProvider(provider);
             setRawAddress(address);
             setAddress(ensName ? ensName : address);
+            setSigner(signer);
           } else {
             // Nullify data
             setProvider(null);
             setRawAddress(null);
             setAddress(null);
+            setSigner(null);
           }
         },
       },
@@ -87,6 +90,7 @@ function useETHState() {
     rawAddress,
     unlock,
     network,
+    signer
   };
 }
 

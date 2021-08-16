@@ -1,5 +1,7 @@
 //generative Art ABI
 
+export const contractAddress = '0xf6Bf0E48ebeE5102C7A0FEb7c7Bd93BEd4b18eF9'
+
 export const generativeArtContractABI = [
     {
       "inputs": [
