@@ -7,7 +7,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: rgb(250, 250, 250);
+  /*background: rgb(244, 233, 154);*/
+  background-image: linear-gradient(120deg, #f4e99a, #c8ebfb);
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -39,9 +40,11 @@ a {
 
 
 
+
 .sizer {
   max-width: 1024px;
   padding: 0px 16px;
   margin: 0px auto;
   text-align: center;
 }
+
