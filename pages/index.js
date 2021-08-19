@@ -36,7 +36,7 @@ function Main() {
        <div className={styles.main_content}>
         <h1>Generative NFT Lottery</h1>
 
-        <h4>Mint super cool generative NFT and get a chance to win 100 ETH !!!</h4>
+        <h4>Mint super cool generative NFTs and get a chance to win 100 ETH !!!</h4>
          
          <p>Each NFT you buy will act as a lottery ticket. Once all NFTs are sold 10 lucky winners will be selected at random & the prize pool is distributed to them automatically by the smart contract.</p>
           <div>

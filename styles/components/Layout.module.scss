@@ -8,7 +8,7 @@
   width: 100%;
   display: flex;
   backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(50, 50, 50, 0.92);
 
   div {
     width: auto;
@@ -45,6 +45,7 @@
         letter-spacing: -0.01em;
         transition: 120ms ease;
         border-radius: 8px;
+        -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
 
         &:hover {
           background-color: var(--color-black);
