@@ -1,0 +1,22 @@
+.faq_main {
+
+  display: flex;
+  height: 100%;
+  margin-top: 8%;
+  align-items: center;
+
+    h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    /*text-align: center;*/
+    margin: 20px 0px 30px 100px;
+    -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
+    &:hover {
+      -webkit-filter: drop-shadow(10px 10px 10px #ffffff);
+    }
+  }
+
+}

@@ -1,7 +1,5 @@
 import dayjs from "dayjs"; // Date parsing
-import axios from "axios"; // Requests
 import Link from "next/link"; // Dynamic routing
-import ReactTable from "react-table-6"; // Table
 import Layout from "../components/Layout"; // Component: layout
 import { toast } from "react-toastify"; // Toast notifications
 import Loader from "react-loader-spinner"; // Spinner
@@ -42,7 +40,7 @@ function Main() {
           <div>
             <p><b>Winner 1 : 100 ETH (300k USD)</b></p>
             <p><b>Winner 2 : 10 ETH (30k USD) </b></p>
-            <p><b>Winner 3 to 10 : 5 ETH each (15k USD)</b></p>
+            <p><b>Winner 3 to 10 : 5 ETH (15k USD) each</b></p>
           </div> 
           <div className={styles.main_buttons}>
             <Link href="/mint">
@@ -59,7 +57,7 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://rinkeby.etherscan.io/address/0xf6bf0e48ebee5102c7a0feb7c7bd93bed4b18ef9">
+       <a target="_blank" href="https://rinkeby.etherscan.io/address/0xf6bf0e48ebee5102c7a0feb7c7bd93bed4b18ef9" rel="noreferrer">
          <p> Contract: 0xA23465 </p>  
        </a>
      </div>
