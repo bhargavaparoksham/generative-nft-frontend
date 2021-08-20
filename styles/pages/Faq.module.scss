@@ -1,9 +1,12 @@
 .faq_main {
 
-  display: flex;
   height: 100%;
-  margin-top: 8%;
+  width: 80%;
+  margin-top: 7%;
+  margin-left: 10%;
   align-items: center;
+  border: 1px solid rgb(238, 238, 240);
+  border-radius: 5%;
 
     h2 {
     color: white;
@@ -11,12 +14,60 @@
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -0.03em;
-    /*text-align: center;*/
-    margin: 20px 0px 30px 100px;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    -webkit-filter: drop-shadow(2px 2px 2px #ffffff);
+    &:hover {
+      -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
+    }
+    }
+
+    h4 {
+    font-size: 24px;
+    color: white;
+    margin: 2% 10% 2% 10%;
     -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
     &:hover {
-      -webkit-filter: drop-shadow(10px 10px 10px #ffffff);
+      -webkit-filter: drop-shadow(5px 5px 5px #ffffff);
     }
-  }
+   }
 
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: white;
+      margin: 2% 10% 2% 10%;
+      -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
+      &:hover {
+      -webkit-filter: drop-shadow(3px 3px 3px #ffffff);
+    }
+    }
+
+    button {
+        background-color: var(--color-blue);
+        border: none;
+        color: white;
+        height: 30px;
+        width: 120px;
+        padding: 0px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        transition: 120ms ease;
+        border-radius: 8px;
+        margin: 30px;
+        -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
+
+        &:hover {
+          background-color: var(--color-black);
+        }
+      } 
+}
+
+
+.faq_footer {
+  margin: 2% 2% 5% 38%;
 }

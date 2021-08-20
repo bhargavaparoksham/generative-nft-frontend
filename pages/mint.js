@@ -14,12 +14,12 @@ export default function Mint() {
 
   const {onboard, unlock, provider, address, network, signer} = state.useContainer();
   const [sliderVal, setSliderVal] = useState(1); // All Slider value
-  const [ethBalance, setEthBalance] = useState(null); //Eth Balance
-  const [contractName, setContractName] = useState(null); // Contract Name
-  const [mintValue, setMintValue] = useState(null); //Mint value
+  const [maxNFTs, setmaxNFTs] = useState(null); //Total No of NFTs
+  const [nftsLeft, setNFTsLeft] = useState(null); // NFTs Left
   const [mintCost, setMintCost] = useState(null); //Mint Cost
-  const [mintCostFormatted, setMintCostFormatted] = useState(''); //Mint Cost
-  const [mintValueFormatted, setMintValueFormatted] = useState(null); //Mint Cost
+  const [totalMintCost, setTotalMintCost] = useState(null); //Total Mint Cost
+  const [mintCostFormatted, setMintCostFormatted] = useState(''); //Formatted Mint Cost
+  const [totalMintCostFormatted, setTotalMintCostFormatted] = useState(null); //Formatted total Mint Cost
   const [saleStatus, setSaleStatus] = useState(''); // NFT Sale Status
   const [transactionHash, setTransactionHash] = useState(null); // Transaction Hash
 
@@ -35,17 +35,14 @@ export default function Mint() {
   }, [unlock, address]);
 
   useEffect(async() => {
-    setMintCost(sliderVal * mintValue);
-    setMintCostFormatted((sliderVal * mintValueFormatted).toFixed(3));
+    setTotalMintCost(sliderVal * mintCost);
+    setTotalMintCostFormatted((sliderVal * mintCostFormatted).toFixed(3));
   }, [sliderVal])
 
 
 
   async function updateConnection() {
     try {
-      const ethBalance = await provider.getBalance(address);
-      const ethBalanceFormatted = await ethers.utils.formatEther(ethBalance);
-      setEthBalance(Math.round(ethBalanceFormatted * 1000)/1000);
 
       const contract = new ethers.Contract(
             contractAddress,
@@ -54,16 +51,20 @@ export default function Mint() {
           );
 
       //console.log(contract);
-      const contractName = await contract.name();
-      setContractName(contractName);
+      const maxNFTs = await contract.nftMintLimit();
+      setmaxNFTs(Math.round(maxNFTs * 1000)/1000);
 
-      const mintValue = await contract.mintPrice();
-      const mintValueFormatted = await ethers.utils.formatEther(mintValue);
-      setMintValue(mintValue);
-      setMintValueFormatted(mintValueFormatted);
+      const nftsMinted = await contract.nftsMinted();
+      const nftsLeft = maxNFTs - nftsMinted;
+      setNFTsLeft(nftsLeft);
 
-      setMintCost(sliderVal * mintValue);
-      setMintCostFormatted((sliderVal * mintValueFormatted).toFixed(3));
+      const mintCost = await contract.mintPrice();
+      const mintCostFormatted = await ethers.utils.formatEther(mintCost);
+      setMintCost(mintCost);
+      setMintCostFormatted(mintCostFormatted);
+
+      setTotalMintCost(sliderVal * mintCost);
+      setTotalMintCostFormatted((sliderVal * mintCostFormatted).toFixed(3));
 
       const status = await contract.saleIsActive();
       setSaleStatus((status == true ? 'Active' : 'Inactive'));
@@ -83,7 +84,7 @@ export default function Mint() {
           );
 
       const overrides = {
-        value: (mintCost).toFixed(0),
+        value: (totalMintCost).toFixed(0),
       };
       const transaction = await contract.mintNFT(sliderVal, overrides);
       //console.log(transaction);
@@ -123,17 +124,24 @@ export default function Mint() {
     // Wrap page in layout
     <Layout>
     <div className={styles.mint}>
-        <div className="sizer">
           {/* Create game details */}
-          <h3>Mint Generative NFTs</h3>
-          <p> ETH balance: {ethBalance} </p>
-          <p> Contract Name: {contractName} </p>
-          <p> Sale Status: {saleStatus} </p>
-          <p> Total Mint Cost: {mintCostFormatted} ETH </p>
-          <p>
-            Please select no of nft you would like to buy?
+          <p className={styles.t}>
+          <a target="_blank" href={"https://etherscan.io/address/"+address} rel="noreferrer">
+            <span className={styles.t1}>Etherscan</span>
+          </a>
+          <a target="_blank" href={"https://opensea.io/"+address} rel="noreferrer">
+            <span className={styles.t2}>My Opensea</span>
+          </a>
           </p>
-          <div className="options">
+          <h3>Generative NFT</h3>
+          <p> Total number of NFTs : <b>{maxNFTs}</b> </p>
+          <p> NFTs left : <b>{nftsLeft}</b> </p>
+          <p> Minting cost per NFT : <b>{mintCostFormatted} ETH</b> </p>
+          <p> Total minting cost : <b>{totalMintCostFormatted} ETH </b> </p>
+          <p>
+            How many NFTs do you want to mint : <b> {sliderVal} </b>
+          </p>
+          <div className={styles.options}>
             <Slider
               min={1} max ={20} step = {1}
               valueLabelDisplay="on"
@@ -144,10 +152,13 @@ export default function Mint() {
               ValueLabelComponent={ValueLabelComponent}
             />
            </div>
+          
 
-          <button onClick={initiateMinting}>
-              Mint NFT
-          </button>
+          <div className={styles.b1}>
+            <button onClick={initiateMinting}>
+                Mint NFT
+            </button>
+          </div>
 
           {transactionHash != null && (
           <span>
@@ -155,7 +166,6 @@ export default function Mint() {
           </span>
         )}
 
-      	</div>
     </div>  	
 
     </Layout>
