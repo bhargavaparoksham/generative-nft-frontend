@@ -1,5 +1,22 @@
+@media (max-height: 450px) {
+
+  .layout__header {
+    height: 16%;
+  }
+
+}
+
+@media (min-height: 450px) {
+
+  .layout__header {
+    height: 8%;
+  }
+
+}
+
+
 .layout__header {
-  height: 8%;
+
   /*border-bottom: 1px solid rgb(238, 238, 240);*/
   position: fixed;
   top: 0;
