@@ -6,15 +6,16 @@
 
   height: 100%;
   width: 80%;
-  margin-top: 15%;
+  margin-top: 18%;
   margin-left: 10%;
   align-items: center;
   border: 1px solid rgb(238, 238, 240);
   border-radius: 7%;
 
-}
+  }
 
 }
+
 
 @media (min-width:600px) and (max-width: 960px) {
   /*device browser width is 600px to 960*/
@@ -103,9 +104,9 @@
       } 
 
   }    
-
+ 
 .options {
-  margin: 7% 10% 0% 10%;
+  margin: 10% 10% 0% 10%;
 }
 
 
@@ -114,18 +115,16 @@
   margin: 2% 2% 10% 36%;
 }
 
-
 .t1 {
-  margin: 5% 25% 0% 1%;
+  margin: 5% 20% 0% 5%;
     &:hover {
       -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
     }
 }
 
 .t2 {
-  margin: 5% 1% 00% 25%;
+  margin: 5% 5% 0% 20%;
     &:hover {
       -webkit-filter: drop-shadow(1px 1px 1px #ffffff);
     }
 }
-
