@@ -154,14 +154,9 @@ function Main() {
        <a target="_blank" href="https://testnets.opensea.io/collection/generative-nft" rel="noreferrer">
          <span className={styles.f1}>Opensea</span>  
         </a>
-       <a target="_blank" href="https://rinkeby.etherscan.io/address/0xf6bf0e48ebee5102c7a0feb7c7bd93bed4b18ef9" rel="noreferrer">
-         <span className={styles.f2}>Contract : 0xA23465</span>  
-         </a>
          <a target="_blank" href="https://twitter.com/aparoksham" rel="noreferrer">
          <span className={styles.f3}>Built By: Eagle</span>
          </a>
-         <span className={styles.f4}>Lottery Ends In : {days} d {hours} h {minutes} m {seconds} s</span>
-       
      </div>
      </div>
   );
