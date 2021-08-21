@@ -123,7 +123,7 @@ export default function Mint() {
   return (
     // Wrap page in layout
     <Layout>
-    <div className={styles.mint}>
+      <div className={styles.mint}>
           {/* Create game details */}
           <p className={styles.t}>
           <a target="_blank" href={"https://etherscan.io/address/"+address} rel="noreferrer">
@@ -159,19 +159,20 @@ export default function Mint() {
                 Mint NFT
             </button>
           </div>
-
+          {/*
           {transactionHash != null && (
           <span>
             <p> Transaction Hash: {transactionHash} </p>
           </span>
         )}
-
+        */}
     </div>  	
 
     </Layout>
   );
 }
 
+//Value Label
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;

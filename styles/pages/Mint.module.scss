@@ -1,5 +1,42 @@
 
-.mint {
+@media (max-width:600px) {
+  /*device browser width is 600px or lower*/
+
+  .mint {
+
+  height: 100%;
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 10%;
+  align-items: center;
+  border: 1px solid rgb(238, 238, 240);
+  border-radius: 7%;
+
+}
+
+}
+
+@media (min-width:600px) and (max-width: 960px) {
+  /*device browser width is 600px to 960*/
+
+  .mint {
+
+  height: 100%;
+  width: 58%;
+  margin-top: 10%;
+  margin-left: 21%;
+  align-items: center;
+  border: 1px solid rgb(238, 238, 240);
+  border-radius: 7%;
+
+}
+
+}
+
+@media (min-width:960px) {
+  /*device browser width is 960px or higher*/
+
+  .mint {
 
   height: 100%;
   width: 36%;
@@ -9,7 +46,13 @@
   border: 1px solid rgb(238, 238, 240);
   border-radius: 7%;
 
-  h3 {
+}
+
+}
+
+.mint {
+
+ h3 {
     color: white;
     font-weight: 700;
     font-size: 32px;
@@ -38,8 +81,6 @@
   margin-top: 3%;
   font-weight: 200;
 }
-  
-
 
   button {
         background-color: var(--color-blue);
@@ -61,7 +102,7 @@
         }
       } 
 
-}
+  }    
 
 .options {
   margin: 7% 10% 0% 10%;

@@ -33,11 +33,11 @@ function Meta() {
   return (
     <Head>
       {/* Primary Meta Tags */}
-      <title>Generative Art</title>
+      <title>Generative NFT Lottery</title>
       <meta name="title" content="generativeart" />
       <meta
         name="description"
-        content="10K Generative NFT Art."
+        content="10K Generative Art NFTs."
       />
       {/* Google fonts */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
