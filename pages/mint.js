@@ -40,6 +40,16 @@ export default function Mint() {
   }, [sliderVal])
 
 
+  useEffect(async() => {
+    if(transactionHash != null) {
+      window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs.");
+    }   
+  }, [transactionHash])
+
+
+  function initiateAlert() {
+    window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs.");
+  }
 
   async function updateConnection() {
     try {
@@ -50,6 +60,7 @@ export default function Mint() {
             signer
           );
 
+      //const bal = await provider.getBalance(address);
       //console.log(contract);
       const maxNFTs = await contract.nftMintLimit();
       setmaxNFTs(Math.round(maxNFTs * 1000)/1000);
@@ -83,9 +94,18 @@ export default function Mint() {
             signer
           );
 
+      const gasPrice = await provider.getGasPrice();
+      //console.log('Gas:'+gasPrice);
+
+      const gasEstimate = await contract.estimateGas.mintNFT(sliderVal, {value: (totalMintCost).toFixed(0)});
+      //console.log('Gas Estimate:'+estimation);
+
       const overrides = {
         value: (totalMintCost).toFixed(0),
+        gasPrice: gasPrice,
+        gasLimit: gasEstimate,
       };
+      
       const transaction = await contract.mintNFT(sliderVal, overrides);
       //console.log(transaction);
       //console.log(transaction.hash);
@@ -127,10 +147,10 @@ export default function Mint() {
           {/* Create game details */}
           <p className={styles.t}>
           <a target="_blank" href={"https://etherscan.io/address/"+address} rel="noreferrer">
-            <span className={styles.t1}>Etherscan</span>
+            <span className={styles.t1}>Transactions</span>
           </a>
           <a target="_blank" href={"https://opensea.io/"+address} rel="noreferrer">
-            <span className={styles.t2}>My Opensea</span>
+            <span className={styles.t2}>My NFTs</span>
           </a>
           </p>
           <h3>Generative NFT</h3>
