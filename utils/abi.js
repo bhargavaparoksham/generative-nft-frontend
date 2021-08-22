@@ -1,6 +1,6 @@
 //generative Art ABI
 
-export const contractAddress = '0xf6Bf0E48ebeE5102C7A0FEb7c7Bd93BEd4b18eF9'
+export const contractAddress = '0x71Ea490D0E3361Cd30CD14662E79e8bE1ACEF8d0'
 
 export const generativeArtContractABI = [
     {
@@ -146,6 +146,25 @@ export const generativeArtContractABI = [
       "anonymous": false,
       "inputs": [
         {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "requestId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "randomNum",
+          "type": "uint256"
+        }
+      ],
+      "name": "RandomNumberGenerated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
           "indexed": false,
           "internalType": "bool",
           "name": "saleIsActive",
@@ -185,21 +204,9 @@ export const generativeArtContractABI = [
       "inputs": [
         {
           "indexed": false,
-          "internalType": "bytes32",
-          "name": "id",
-          "type": "bytes32"
-        },
-        {
-          "indexed": false,
-          "internalType": "uint256",
-          "name": "winnerPosition",
-          "type": "uint256"
-        },
-        {
-          "indexed": false,
-          "internalType": "uint256",
-          "name": "winnerID",
-          "type": "uint256"
+          "internalType": "bool",
+          "name": "winnersSelected",
+          "type": "bool"
         }
       ],
       "name": "WinnerSelected",
@@ -216,7 +223,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -229,7 +237,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -242,7 +251,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -255,7 +265,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -292,7 +303,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -305,11 +317,12 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
-      "name": "chainlinkAvailable",
+      "name": "chainlinkRandomness",
       "outputs": [
         {
           "internalType": "uint256",
@@ -318,7 +331,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -337,7 +351,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -361,7 +376,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -374,7 +390,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -387,7 +404,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -400,7 +418,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -413,7 +432,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -426,7 +446,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -439,7 +460,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -452,7 +474,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -471,7 +494,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -490,7 +514,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -579,7 +604,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -616,7 +642,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -629,7 +656,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -648,7 +676,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -703,20 +732,8 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "winnersCount",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -729,7 +746,22 @@ export const generativeArtContractABI = [
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "winnersSelected",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -775,7 +807,8 @@ export const generativeArtContractABI = [
       "name": "mintNFT",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -833,7 +866,7 @@ export const generativeArtContractABI = [
     },
     {
       "inputs": [],
-      "name": "collectRandomWinner",
+      "name": "getRandomness",
       "outputs": [
         {
           "internalType": "bytes32",
@@ -858,14 +891,8 @@ export const generativeArtContractABI = [
       "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_depositAmount",
-          "type": "uint256"
-        }
-      ],
-      "name": "depositLink",
+      "inputs": [],
+      "name": "selectRandomWinners",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"

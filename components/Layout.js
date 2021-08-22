@@ -37,7 +37,7 @@ function Meta() {
       <meta name="title" content="generativeart" />
       <meta
         name="description"
-        content="10K Generative Art NFTs."
+        content="Generative NFT lottery is an NFT based lottery where each NFT you buy will act as a lottery ticket. Once all 10k NFTs are sold 10 lucky winners will be selected at random & the prize pool is distributed to them automatically."
       />
       {/* Google fonts */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
