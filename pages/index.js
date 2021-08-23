@@ -25,7 +25,7 @@ export default function Home() {
  */
 function Main() {
 
-  const [deadline, setdeadline] = useState("August, 30, 2021"); // Lottery deadline
+  const [deadline, setdeadline] = useState("September, 25, 2021"); // Lottery deadline
   const [days, setdays] = useState(0); // days
   const [hours, sethours] = useState(0); // hours
   const [minutes, setminutes] = useState(0); // minutes
@@ -100,11 +100,11 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://testnets.opensea.io/collection/generative-nft" rel="noreferrer">
-         <span className={styles.f1}>Opensea</span>  
+       <a target="_blank" href="https://twitter.com/nftlotteryapp" rel="noreferrer">
+         <span className={styles.f1}>Twitter</span>  
         </a>
-       <a target="_blank" href="https://rinkeby.etherscan.io/address/0xf6bf0e48ebee5102c7a0feb7c7bd93bed4b18ef9" rel="noreferrer">
-         <span className={styles.f2}>Contract : 0xA23465</span>  
+       <a target="_blank" href="https://etherscan.io/address/0x241d6c1aa3355b2dd58148f8068fce2cedd6bd1b" rel="noreferrer">
+         <span className={styles.f2}>Contract : 0x241d6</span>  
          </a>
          <a target="_blank" href="https://twitter.com/aparoksham" rel="noreferrer">
          <span className={styles.f3}>Built By: Eagle</span>

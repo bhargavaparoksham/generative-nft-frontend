@@ -1,6 +1,6 @@
 //generative Art ABI
 
-export const contractAddress = '0x71Ea490D0E3361Cd30CD14662E79e8bE1ACEF8d0'
+export const contractAddress = '0x241d6C1aa3355B2dd58148F8068fCE2CEdd6Bd1b'
 
 export const generativeArtContractABI = [
     {
@@ -813,24 +813,6 @@ export const generativeArtContractABI = [
     {
       "inputs": [
         {
-          "internalType": "address",
-          "name": "_to",
-          "type": "address"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_amount",
-          "type": "uint256"
-        }
-      ],
-      "name": "withdrawETH",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
           "internalType": "bytes32",
           "name": "_ChainlinkKeyHash",
           "type": "bytes32"
@@ -878,19 +860,6 @@ export const generativeArtContractABI = [
       "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "address",
-          "name": "_to",
-          "type": "address"
-        }
-      ],
-      "name": "withdrawLink",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "inputs": [],
       "name": "selectRandomWinners",
       "outputs": [],
@@ -900,6 +869,37 @@ export const generativeArtContractABI = [
     {
       "inputs": [],
       "name": "disburseWinners",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawETH",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawLink",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"

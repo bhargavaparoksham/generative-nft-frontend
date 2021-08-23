@@ -34,7 +34,7 @@ function useETHState() {
     // Onboard provider
     const onboard = Onboard({
       // Ethereum network
-      networkId: 4,
+      networkId: 1,
       // Hide Blocknative branding
       hideBranding: true,
       // Setup custom wallets for selection
