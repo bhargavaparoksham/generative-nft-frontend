@@ -151,11 +151,11 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://etherscan.io/address/0x241d6c1aa3355b2dd58148f8068fce2cedd6bd1b" rel="noreferrer">
-         <span className={styles.f1}>Contract</span>  
+       <a target="_blank" href="https://twitter.com/nftlotteryapp" rel="noreferrer">
+         <span className={styles.f1}>Twitter</span>  
         </a>
-         <a target="_blank" href="https://twitter.com/aparoksham" rel="noreferrer">
-         <span className={styles.f3}>Built By: Eagle</span>
+         <a target="_blank" href="https://etherscan.io/address/0x241d6c1aa3355b2dd58148f8068fce2cedd6bd1b" rel="noreferrer">
+         <span className={styles.f3}>Contract: 0x241d6</span>
          </a>
      </div>
      </div>
