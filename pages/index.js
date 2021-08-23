@@ -151,8 +151,8 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://testnets.opensea.io/collection/generative-nft" rel="noreferrer">
-         <span className={styles.f1}>Opensea</span>  
+       <a target="_blank" href="https://etherscan.io/address/0x241d6c1aa3355b2dd58148f8068fce2cedd6bd1b" rel="noreferrer">
+         <span className={styles.f1}>Contract</span>  
         </a>
          <a target="_blank" href="https://twitter.com/aparoksham" rel="noreferrer">
          <span className={styles.f3}>Built By: Eagle</span>
