@@ -100,7 +100,7 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://twitter.com/nftlotteryapp" rel="noreferrer">
+       <a target="_blank" href="https://twitter.com/_fairysparkle" rel="noreferrer">
          <span className={styles.f1}>Twitter</span>  
         </a>
         <a target="_blank" href="https://discord.gg/rF8y9zY4" rel="noreferrer">
@@ -154,7 +154,7 @@ function Main() {
        </div>
      </div>
      <div className={styles.footer}>
-       <a target="_blank" href="https://twitter.com/nftlotteryapp" rel="noreferrer">
+       <a target="_blank" href="https://twitter.com/_fairysparkle" rel="noreferrer">
          <span className={styles.f1}>Twitter</span>  
         </a>
          <a target="_blank" href="https://etherscan.io/address/0x241d6c1aa3355b2dd58148f8068fce2cedd6bd1b" rel="noreferrer">
