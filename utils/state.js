@@ -39,8 +39,8 @@ function useETHState() {
       hideBranding: true,
       // Setup custom wallets for selection
       walletSelect: {
-        heading: "Connect to Generative Art",
-        description: "Please select a wallet to authenticate with generative art.",
+        heading: "Connect to Fairy Sparkles",
+        description: "Please select a wallet to authenticate with Fairy Sparkles.",
         wallets: wallets,
       },
       // Track subscriptions

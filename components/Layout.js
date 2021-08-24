@@ -33,11 +33,11 @@ function Meta() {
   return (
     <Head>
       {/* Primary Meta Tags */}
-      <title>Generative NFT Lottery</title>
-      <meta name="title" content="Generative NFT Lottery" />
+      <title>Fairy Sparkles</title>
+      <meta name="title" content="Fairy Sparkles" />
       <meta
         name="description"
-        content="Generative NFT lottery is an NFT smart contract where each NFT you buy will act as a lottery ticket. Once all 10k NFTs are sold, 10 lucky winners will be selected at random & the prize pool is distributed to them automatically."
+        content="Fairy Sparkles is an NFT smart contract where each NFT you buy will act as a lottery ticket. Once all 10k NFTs are sold, 10 lucky winners will be selected at random & the prize pool is distributed to them automatically."
       />
       {/* Google fonts */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -42,13 +42,13 @@ export default function Mint() {
 
   useEffect(async() => {
     if(transactionHash != null) {
-      window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs.");
+      window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs. Note that minted NFTs can take upto 10 to 15 mins to reflect in your account.");
     }   
   }, [transactionHash])
 
 
   function initiateAlert() {
-    window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs.");
+    window.alert("Minting is in progress. You can check your transaction status by clicking on 'Transactions'. Once transaction is successful, click on 'My NFTs' to check your minted NFTs. Note that minted NFTs can take upto 10 to 15 mins to reflect in your account.");
   }
 
   async function updateConnection() {
@@ -153,7 +153,7 @@ export default function Mint() {
             <span className={styles.t2}>My NFTs</span>
           </a>
           </p>
-          <h3>Generative NFT</h3>
+          <h3>Fairy Sparkles</h3>
           <p> Total number of NFTs : <b>{maxNFTs}</b> </p>
           <p> NFTs left : <b>{nftsLeft}</b> </p>
           <p> Minting cost per NFT : <b>{mintCostFormatted} ETH</b> </p>
