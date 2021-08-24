@@ -75,7 +75,7 @@ function Main() {
         <Image src={art} alt="NFT Art" height="500" width="500" />
        </div>
        <div className={styles.main_content}>
-        <h1>Fairy Sparkles Art Project</h1>
+        <h1>Fairy Sparkles</h1>
 
         <h4>Mint super cool generative NFT art and get a chance to win 100 ETH !!!</h4>
          
@@ -125,7 +125,7 @@ function Main() {
     <div>
     <div className={styles.main}>
       <div className={styles.main_content1}>
-        <h1>Fairy Sparkles Art Project</h1>
+        <h1>Fairy Sparkles</h1>
       </div>
       <div className={styles.main_art}>
         <Image src={art} alt="NFT Art" height="500" width="500" />
