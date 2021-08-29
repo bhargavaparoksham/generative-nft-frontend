@@ -22,7 +22,7 @@ function FaqMain(){
 	return(
 		<div className={styles.faq_main}>
     	 	<h2> Fairy Sparkles FAQ </h2>
-        <h4>What are fairy sparkles?</h4>
+        <h4>What are Fairy Sparkles?</h4>
         <p>
         Fairy Sparkles is a collection of 10,000 unique high quality generative artworks that anyone can mint on the ethereum blockchain as an NFT. Each fairy sparkles NFT minted will also act as a lottery ticket which will give the owners of the fairy sparkles a chance to win 150 ETH.
         </p>
@@ -34,9 +34,9 @@ function FaqMain(){
         Winner 2 : 10 ETH <br/>
         Winners 3 to 10 : 5 ETH each.
         </p>
-        <h4> What is a generative art & why should I mint one? </h4>
+        <h4> What is generative art & why should I mint one? </h4>
         <p>
-        Generative art refers to beautiful art that has been created with the use of a computer program. Generative art NFTs has picked up a lot of momentum recently with the success of NFT projects like <u><a href="https://opensea.io/collection/art-blocks">Art blocks</a></u> where generative art works have been sold from anywhere between 0.5 ETH to 1000 ETH!
+        Generative art refers to any beautiful art that has been created with the use of a computer program. Generative art NFTs has picked up a lot of momentum recently with the success of NFT projects like <u><a href="https://opensea.io/collection/art-blocks">Art blocks</a></u> where generative art works have been sold from anywhere between 0.5 ETH to 1000 ETH!
         </p>
         <h4>What is an NFT?</h4>
         <p>An NFT stands for &ldquo;Non-fungible token&rdquo; which is a unique, one of a kind digital item like an artwork or a digital collectible that users can buy, own, and trade on the ethereum blockchain. </p>
