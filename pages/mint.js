@@ -159,7 +159,7 @@ export default function Mint() {
           <p> Minting cost per NFT : <b>{mintCostFormatted} ETH</b> </p>
           <p> Total minting cost : <b>{totalMintCostFormatted} ETH </b> </p>
           <p>
-            How many NFTs do you want to mint : <b> {sliderVal} </b>
+            How many NFTs do you want to buy : <b> {sliderVal} </b>
           </p>
           <div className={styles.options}>
             <Slider
@@ -176,7 +176,7 @@ export default function Mint() {
 
           <div className={styles.b1}>
             <button onClick={initiateMinting}>
-                Mint NFT
+                Buy NFT
             </button>
           </div>
           {/*
