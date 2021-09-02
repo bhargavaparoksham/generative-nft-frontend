@@ -24,7 +24,7 @@ function FaqMain(){
     	 	<h2> Fairy Sparkles FAQ </h2>
         <h4>What are Fairy Sparkles?</h4>
         <p>
-        Fairy Sparkles is a collection of 10,000 unique high quality generative artworks that anyone can buy on the ethereum blockchain as an NFT. Each fairy sparkles NFT purchased will also act as a lottery ticket which will give the owners of the fairy sparkles a chance to win 150 ETH.
+        Fairy Sparkles is a collection of 10,000 unique high quality generative artworks that anyone can buy on the ethereum blockchain as an NFT. Each fairy sparkles NFT purchased is believed to become your lucky charm and also act as a lottery ticket which will give you a chance to win 100 ETH.
         </p>
     	  <h4>How does the Fairy Sparkles Lottery work?</h4>
         <p>
@@ -51,7 +51,7 @@ function FaqMain(){
         <div className={styles.faq_footer}>
         <Link href="/mint">
               <button>
-                Mint Nowel
+                Mint Now
               </button>
             </Link> 
         </div>

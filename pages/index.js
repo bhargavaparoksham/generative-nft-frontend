@@ -77,9 +77,9 @@ function Main() {
        <div className={styles.main_content}>
         <h1>Fairy Sparkles</h1>
 
-        <h4>Buy super cool generative NFT art and get a chance to win 100 ETH !!!</h4>
+        <h4>NFTs that are believed to become your lucky charm and also get you a chance to win 100 ETH !</h4>
          
-         <p>Each NFT art you buy will also act as a lottery ticket. Once all 10k NFTs are bought 10 lucky winners will be selected at random & the prize pool is distributed to them automatically by the smart contract.</p>
+         <p>Each fairy sparkles you buy will also act as a lottery ticket. Once all 10k NFTs are bought 10 lucky winners will be selected at random & the money pooled from the sale is distributed to them automatically by the smart contract.</p>
           <div>
             <p><b>Winner 1 : 100 ETH (300k USD)</b></p>
             <p><b>Winner 2 : 10 ETH (30k USD) </b></p>
@@ -131,8 +131,8 @@ function Main() {
         <Image src={art} alt="NFT Art" height="500" width="500" />
        </div>
        <div className={styles.main_content2}>  
-        <h4>Buy super cool generative NFT art and get a chance to win 100 ETH !!!</h4>         
-         <p>Each NFT art you buy will also act as a lottery ticket. Once all 10k NFTs are bought 10 lucky winners will be selected at random & the prize pool is distributed to them automatically by the smart contract.</p>
+        <h4>NFTs that are believed to become your lucky charm and also get you a chance to win 100 ETH !</h4>         
+         <p>Each fairy sparkles you buy will also act as a lottery ticket. Once all 10k NFTs are bought 10 lucky winners will be selected at random & the money pooled from the sale is distributed to them automatically by the smart contract.</p>
           <div>
             <p><b>Winner 1 : 100 ETH (300k USD)</b></p>
             <p><b>Winner 2 : 10 ETH (30k USD) </b></p>
