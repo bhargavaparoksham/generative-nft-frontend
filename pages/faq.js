@@ -24,15 +24,15 @@ function FaqMain(){
     	 	<h2> Fairy Sparkles FAQ </h2>
         <h4>What are Fairy Sparkles?</h4>
         <p>
-        Fairy Sparkles is a collection of 10,000 unique high quality generative artworks that anyone can buy on the ethereum blockchain as an NFT. Each fairy sparkles NFT purchased is believed to become your lucky charm and also act as a lottery ticket which will give you a chance to win 100 ETH.
+        Fairy Sparkles is a collection of 10,000 rare generative artworks that you can mint on the ethereum blockchain as an NFT. Legend has it that each fairy sparkles NFT purchased is believed to become your lucky charm and also give you a chance to win 100 ETH. The more fairy sparkles you own the luckier you get!
         </p>
-    	  <h4>How does the Fairy Sparkles Lottery work?</h4>
+    	  <h4>How can I win 100 ETH?</h4>
         <p>
-        Fairy Sparkles NFT smart contract has a built in lottery function. Once all 10k NFTs are sold, the lottery gets activated with a prize pool of 150 ETH (i.e 60% of the money raised from the sale of the NFTs). Once lottery is activated, 10 lucky winners will be selected using chainlink&apos;s VRF (Verifiable Random Function) and the prize pool will be automatically distributed to them as below, <br/>
+        Fairy Sparkles has a custom built NFT smart contract where part of the money pooled from the NFT sale (i.e 150 ETH) is given back to 10 lucky fairy sparkles owners as a giveaway. Note that winners are randomly selected using Chainlink VRF & giveaway is done on chain by the smart contract itself once all the 10k NFTs are sold. The giveaway will be as below, <br/>
         <br/>
-        Winner 1 : 100 ETH <br/>
-        Winner 2 : 10 ETH <br/>
-        Winners 3 to 10 : 5 ETH each.
+        Winner 1 : 100 ETH (300k USD)<br/>
+        Winner 2 : 10 ETH (30k USD)<br/>
+        Winners 3 to 10 : 5 ETH (15K USD) each.
         </p>
         <h4> What is generative art & why should I mint one? </h4>
         <p>
